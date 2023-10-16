@@ -108,9 +108,11 @@ hr {
 h3 {
   font-style: normal;
   font-weight: inherit;
-  transition: 0.2ms;
-  -webkit-transition: 0.2ms;
-  -moz-transition: 0.2ms;
+  transition: 0.2s;
+  -webkit-transition: 0.2s;
+  -moz-transition: 0.2s;
+  max-width: 200px;
+  margin: 0 auto;
 }
 
 h2 {
