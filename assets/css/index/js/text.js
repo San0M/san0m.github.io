@@ -20,7 +20,7 @@
   });
 $(function() {
 	$(".typed").typed({
-        strings: ['Kartop cutie💖.', "Fuck...", "Who i'm", "Clown?", "why are you reading?", "I want to solve problems", "I'm dumb", "pls donate me)"],
+        strings: ["Fuck...", "Who i'm", "Clown?", "why are you reading?", "I want to solve problems", "I'm dumb", "pls donate me)"],
         typeSpeed: 100,
         loop: true,
         cursorChar: "|",
