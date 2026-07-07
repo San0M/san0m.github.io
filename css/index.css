@@ -91,6 +91,25 @@ body {
     object-fit: cover;
     border: 2px solid #33333a;
     flex-shrink: 0;
+    
+    transition: transform 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
+                filter 0.25s ease, 
+                box-shadow 0.25s ease, 
+                border-color 0.25s ease;
+    -webkit-tap-highlight-color: transparent; 
+}
+
+.avatar:hover {
+    transform: scale(1.05);
+    border-color: #555560; 
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.avatar:active {
+    transform: scale(0.92); 
+    filter: brightness(0.5); 
+    box-shadow: none; 
+    border-color: #222227; 
 }
 
 .info h1 {
