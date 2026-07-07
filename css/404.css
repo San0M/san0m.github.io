@@ -1,0 +1,90 @@
+.bento-grid.single-col {
+    grid-template-columns: 1fr;
+    max-width: 450px; 
+}
+
+
+.error-card {
+    text-align: center;
+    padding: 40px 24px;
+}
+
+.error-card h1 {
+    font-size: 42px;
+    color: #ffffff;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.error-card p {
+    color: #a0a0ab;
+    font-size: 16px;
+}
+
+/* Стили для блока FRP */
+.frp-card h2 {
+    font-size: 20px;
+    color: #e4e4e7;
+    margin-bottom: 24px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.action-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.action-btn {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: #222227;
+    padding: 16px 20px;
+    border-radius: 16px;
+    text-decoration: none;
+    border: 1px solid #2d2d35;
+    transition: all 0.25s ease;
+}
+
+
+.action-btn:hover {
+    background-color: #2a2a33;
+    transform: translateY(-3px);
+    border-color: #3f3f4a;
+}
+
+
+.action-btn i {
+    font-size: 24px;
+    color: #5971AD; 
+    width: 30px;
+    text-align: center;
+}
+
+.action-btn.lock i { 
+    color: #F3A440; 
+}
+
+.action-btn.phone i { 
+    color: #57D366; 
+}
+
+.action-text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.action-title {
+    color: #e4e4e7;
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 4px;
+}
+
+.action-info {
+    color: #a0a0ab;
+    font-size: 13px;
+}
