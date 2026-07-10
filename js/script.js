@@ -11,7 +11,7 @@ window.addEventListener('resize', resizeCanvas);
 
 const particlesArray = [];
 const numberOfParticles = 100; 
-const particleColor = 'rgba(255, 255, 255, 0.8)'; 
+const particleColor = 'rgba(254, 244, 20, 0.8)'; 
 
 
 class Particle {
