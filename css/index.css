@@ -89,7 +89,8 @@ body {
     background-color: #2a2a30;
     border-radius: 50%;
     object-fit: cover;
-    border: 2px solid #33333a;
+    border: 1px solid rgba(254, 244, 20, 0.8);
+    box-shadow: 0 0 12px rgba(254, 244, 20, 0.35);
     flex-shrink: 0;
     
     transition: transform 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
