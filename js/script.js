@@ -72,3 +72,43 @@ function animate() {
 
 init();
 animate();
+
+document.addEventListener('DOMContentLoaded', () => {
+    const modal = document.getElementById('donateModal');
+    const openBtn = document.getElementById('openDonate');
+    const closeBtn = document.querySelector('.close-btn');
+
+    openBtn.addEventListener('click', () => {
+        modal.classList.add('active');
+    });
+
+    closeBtn.addEventListener('click', () => {
+        modal.classList.remove('active');
+    });
+
+    window.addEventListener('click', (e) => {
+        if (e.target === modal) {
+            modal.classList.remove('active');
+        }
+    });
+});
+
+function copyToClipboard(elementId, btnElement) {
+    const textToCopy = document.getElementById(elementId).innerText;
+    
+    navigator.clipboard.writeText(textToCopy).then(() => {
+        const icon = btnElement.querySelector('i');
+        
+        icon.classList.remove('fa-regular', 'fa-copy');
+        icon.classList.add('fa-solid', 'fa-check');
+        icon.style.color = '#06C755';
+        
+        setTimeout(() => {
+            icon.classList.remove('fa-solid', 'fa-check');
+            icon.classList.add('fa-regular', 'fa-copy');
+            icon.style.color = '';
+        }, 2000);
+    }).catch(err => {
+        console.error('Не удалось скопировать текст: ', err);
+    });
+}
