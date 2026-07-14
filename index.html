@@ -23,9 +23,9 @@
             </a>
 
             <div class="info">
-                <h1>Itz_Tensh1 ♡</h1>
-                <p>19 years old (or 0x13); I studied at L.A.K., plan to go back to school, and am not currently working.</p>
-            </div>
+    <h1>Itz_Tensh1 ♡</h1>
+    <p>19 years old (or 0x13); I studied at L.A.K., plan to go back to school, and am not currently working.</p>
+</div>
                 </div>
         
 
@@ -38,6 +38,7 @@
                 <a href="https://github.com/san0m" target="_blank" class="btn-social btn-gh" title="GitHub">
                     <i class="fa-brands fa-github"></i>
                 </a>
+
                 <a href="https://line.me/ti/p/h99MXd6FC4" target="_blank" class="btn-social btn-line" title="Line">
                     <i class="fa-brands fa-line"></i>
                 </a>
@@ -58,8 +59,55 @@
             </div>
         </div>
 
+        <div class="bottom-actions">
+            <button id="openDonate" class="btn-donate-floating" title="Support Me">
+                <i class="fa-solid fa-hryvnia-sign"></i>
+            </button>
+        </div>
+    </div>
+
+    <div id="donateModal" class="modal">
+        <div class="card modal-content">
+            <span class="close-btn"><i class="fa-solid fa-xmark"></i></span>
+            <h2>Donate / Support</h2>
+            
+            <div class="donate-list">
+                <div class="donate-item">
+                    <div class="donate-info">
+                        <span>Credit Card (Monobank)</span>
+                        <code id="cardNum">4874 0700 6146 8649</code>
+                    </div>
+                    <button class="btn-copy" onclick="copyToClipboard('cardNum', this)" title="Copy">
+                        <i class="fa-regular fa-copy"></i>
+                    </button>
+                </div>
+                
+                <div class="donate-item">
+                    <div class="donate-info">
+                        <span>USDT (TON)</span>
+                        <code id="usdtAddr">UQD5AKpz9RptnGAGnpyItHWOLAmqZ7Mw3PqTRQf5KxpN7qEk</code>
+                    </div>
+                    <button class="btn-copy" onclick="copyToClipboard('usdtAddr', this)" title="Copy">
+                        <i class="fa-regular fa-copy"></i>
+                    </button>
+                </div>
+
+                <div class="donate-item">
+                    <div class="donate-info">
+                        <span>Gram (TON)</span>
+                        <code id="btcAddr">UQD5AKpz9RptnGAGnpyItHWOLAmqZ7Mw3PqTRQf5KxpN7qEk</code>
+                    </div>
+                    <button class="btn-copy" onclick="copyToClipboard('btcAddr', this)" title="Copy">
+                        <i class="fa-regular fa-copy"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="js/script.js"></script>
+</body>
+</html>
+
 </body>
 </html>
