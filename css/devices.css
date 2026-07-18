@@ -10,12 +10,13 @@ body {
     font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    min-height: 100vh;
-    padding: 40px 20px;
+    align-items: center;
+    height: 100vh;
+    height: 100dvh; 
+    overflow: hidden; 
+    padding: 10px;
 }
 
-/* Стили для холста с точками */
 #particleCanvas {
     position: fixed;
     top: 0;
@@ -26,8 +27,8 @@ body {
 }
 
 .bento-grid {
-    position: relative; /* Добавлено */
-    z-index: 1;         /* Добавлено */
+    position: relative; 
+    z-index: 1;         
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
@@ -121,26 +122,53 @@ body {
 @media (max-width: 650px) {
     .bento-grid {
         grid-template-columns: 1fr; 
+        gap: 12px;
     }
     
     .header-card, .section-title, .pc-card {
         grid-column: span 1; 
     }
     
+    .card {
+        padding: 14px 16px; 
+    }
+
     .header-card {
         flex-direction: column;
         text-align: center;
+        gap: 10px;
     }
-}
 
-.link-card {
-    text-decoration: none; 
-    display: block; 
-    color: inherit; 
-    cursor: pointer; 
-}
+    .btn-back {
+        width: 42px;
+        height: 42px;
+        font-size: 18px;
+    }
 
-.link-card:hover {
-    border-color: #4da6ff; 
-    box-shadow: 0 4px 15px rgba(77, 166, 255, 0.1); 
+    .info h1 {
+        font-size: 20px;
+        margin-bottom: 2px;
+    }
+
+    .info p {
+        font-size: 12px;
+        line-height: 1.3;
+    }
+
+    .section-title {
+        font-size: 16px;
+        margin-top: 5px;
+        margin-bottom: -5px; 
+        padding-bottom: 10px;
+    }
+
+    .device-card h2 {
+        font-size: 15px;
+        margin-bottom: 4px;
+    }
+
+    .device-card p {
+        font-size: 12px;
+        line-height: 1.3;
+    }
 }
