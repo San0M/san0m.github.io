@@ -25,8 +25,8 @@ body {
 }
 
 .bento-grid {
-    position: relative; /* Добавлено */
-    z-index: 1;         /* Добавлено */
+    position: relative; 
+    z-index: 1;         
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
