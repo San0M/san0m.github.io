@@ -160,7 +160,6 @@ body {
     gap: 12px;
 }
 
-/* ===== DONATE MODAL STYLES ===== */
 .btn-donate-trigger {
     display: inline-flex;
     align-items: center;
@@ -187,7 +186,7 @@ body {
 }
 
 .modal {
-    display: none; /* Скрыто по умолчанию */
+    display: none;
     position: fixed;
     z-index: 1000;
     left: 0;
@@ -208,7 +207,6 @@ body {
     opacity: 1;
 }
 
-/* Переиспользуем твой класс .card, но добавляем специфику */
 .modal-content.card {
     max-width: 450px;
     width: 90%;
@@ -374,6 +372,7 @@ body {
 .btn-wechat:hover { background-color: #07C160; color: #fff; border-color: #07C160; box-shadow: 0 4px 12px rgba(7, 193, 96, 0.4); }
 .btn-kakao:hover { background-color: #FEE500; color: #191919; border-color: #FEE500; box-shadow: 0 4px 12px rgba(254, 229, 0, 0.4); }
 .btn-steam:hover { background-color: #171a21; color: #fff; border-color: #66c0f4; box-shadow: 0 4px 12px rgba(102, 192, 244, 0.4); }
+.btn-gmail:hover { background-color: #EA4335; color: #fff; border-color: #EA4335; box-shadow: 0 4px 12px rgba(234, 67, 53, 0.4); }
 
 @media (max-width: 650px) {
     .bento-grid {
