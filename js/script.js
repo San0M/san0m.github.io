@@ -74,21 +74,36 @@ init();
 animate();
 
 document.addEventListener('DOMContentLoaded', () => {
-    const modal = document.getElementById('donateModal');
-    const openBtn = document.getElementById('openDonate');
-    const closeBtn = document.querySelector('.close-btn');
+    const donateModal = document.getElementById('donateModal');
+    const openDonateBtn = document.getElementById('openDonate');
+    const closeDonateBtn = donateModal.querySelector('.close-btn');
 
-    openBtn.addEventListener('click', () => {
-        modal.classList.add('active');
+    openDonateBtn.addEventListener('click', () => {
+        donateModal.classList.add('active');
     });
 
-    closeBtn.addEventListener('click', () => {
-        modal.classList.remove('active');
+    closeDonateBtn.addEventListener('click', () => {
+        donateModal.classList.remove('active');
+    });
+
+    const wechatModal = document.getElementById('wechatModal');
+    const openWechatBtn = document.getElementById('openWechat');
+    const closeWechatBtn = wechatModal.querySelector('.close-btn');
+
+    openWechatBtn.addEventListener('click', () => {
+        wechatModal.classList.add('active');
+    });
+
+    closeWechatBtn.addEventListener('click', () => {
+        wechatModal.classList.remove('active');
     });
 
     window.addEventListener('click', (e) => {
-        if (e.target === modal) {
-            modal.classList.remove('active');
+        if (e.target === donateModal) {
+            donateModal.classList.remove('active');
+        }
+        if (e.target === wechatModal) {
+            wechatModal.classList.remove('active');
         }
     });
 });
