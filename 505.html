@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>505 HTTP Version Not Supported</title>
+    <link rel="stylesheet" href="css/505.css">
+</head>
+<body>
+    <div id="error-screen" class="screen">
+        <div class="error-content">
+            <h1>505</h1>
+            <h2>HTTP Version Not Supported</h2>
+            <p>The server encountered an unexpected condition.<br>Initiating diagnostic protocol...</p>
+            
+            <div class="difficulty-menu">
+                <p>Select diagnostic level:</p>
+                <label><input type="radio" name="diff" value="1" checked> Level 1 (Easy - 1 Suit)</label><br>
+                <label><input type="radio" name="diff" value="2"> Level 2 (Medium - 2 Suits)</label><br>
+                <label><input type="radio" name="diff" value="4"> Level 4 (Hard - 4 Suits)</label>
+            </div>
+
+            <button id="start-btn">Run Diagnostics</button>
+        </div>
+    </div>
+
+    <div id="game-screen" class="screen hidden">
+        <div class="top-bar">
+            <div class="stats">
+                <span>Score: <span id="score">500</span></span>
+                <span>Moves: <span id="moves">0</span></span>
+            </div>
+            <div>
+                <button id="undo-btn" disabled>Undo</button>
+                <button id="menu-btn" style="margin-left: 5px;">Menu</button>
+            </div>
+        </div>
+        
+        <div id="tableau" class="tableau"></div>
+
+        <div class="bottom-bar">
+            <div id="deck-area" class="deck-area"></div>
+            <div id="foundation" class="foundation"></div>
+        </div>
+    </div>
+
+    <div id="modal-layer" class="screen hidden">
+        <div class="aero-window">
+            <div id="pause-content" class="aero-content hidden">
+                <h2>Pause</h2>
+                <div class="menu-buttons">
+                    <button class="aero-btn" id="resume-btn">Resume</button>
+                    <button class="aero-btn" id="restart-btn">Restart deal</button>
+                    <button class="aero-btn" id="new-game-btn">New game</button>
+                </div>
+            </div>
+            <div id="win-content" class="aero-content hidden">
+                <h2>You Win!</h2>
+                <p style="margin-bottom: 15px;">Congratulations, you completed the deal.</p>
+                <div class="menu-buttons">
+                    <button class="aero-btn" id="win-restart-btn">Play this deal again</button>
+                    <button class="aero-btn" id="win-new-btn">New game</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="drag-layer"></div>
+
+    <script src="js/game.js"></script>
+</body>
+</html>
