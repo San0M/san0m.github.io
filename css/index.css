@@ -161,7 +161,7 @@ body {
 .social-links {
     display: flex;
     flex-wrap: wrap;
-    gap: 6px;
+    gap: 8px;
 }
 
 .btn-donate-trigger {
