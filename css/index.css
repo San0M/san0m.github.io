@@ -91,8 +91,8 @@ body {
     background-color: #2a2a30;
     border-radius: 50%;
     object-fit: cover;
-    border: 1px solid rgba(254, 244, 20, 0.8);
-    box-shadow: 0 0 12px rgba(254, 244, 20, 0.35);
+    border: 1px solid rgba(154, 164, 164, 0.8);
+    box-shadow: 0 0 12px rgba(154, 164, 164, 0.35);
     flex-shrink: 0;
     
     transition: transform 0.25s cubic-bezier(0.25, 0.46, 0.45, 0.94), 
@@ -336,7 +336,7 @@ body {
 }
 
 .btn-donate-floating:hover {
-    background-color: #fef414; 
+    background-color: #98A4A4; 
     color: #16161a;            
     border-color: #fef414;
     transform: scale(1.1) translateY(-3px); 
