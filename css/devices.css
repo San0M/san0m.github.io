@@ -55,6 +55,8 @@ body {
     display: flex;
     align-items: center;
     gap: 20px;
+    position: relative;
+    padding-right: 60px;
 }
 
 .info h1 {
@@ -85,10 +87,22 @@ body {
     flex-shrink: 0;
 }
 
-.btn-back:hover {
-    background-color: #ffffff;
-    color: #16161a;
-    transform: scale(1.05);
+.btn-back {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #222227;
+    border: 1px solid #2d2d35;
+    color: #a0a0ab;
+    font-size: 18px;
+    text-decoration: none;
+    transition: all 0.2s ease;
 }
 
 .section-title {
