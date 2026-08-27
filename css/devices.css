@@ -72,22 +72,6 @@ body {
 }
 
 .btn-back {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    background-color: #222227;
-    border: 1px solid #2d2d35;
-    color: #a0a0ab;
-    font-size: 20px;
-    text-decoration: none;
-    transition: all 0.2s ease;
-    flex-shrink: 0;
-}
-
-.btn-back {
     position: absolute;
     top: 20px;
     right: 20px;
@@ -103,6 +87,13 @@ body {
     font-size: 18px;
     text-decoration: none;
     transition: all 0.2s ease;
+    flex-shrink: 0;
+}
+
+.btn-back:hover {
+    background-color: #ffffff;
+    color: #16161a;
+    transform: scale(1.05);
 }
 
 .section-title {
@@ -133,6 +124,18 @@ body {
     grid-column: span 2;
 }
 
+.link-card,
+a.card, 
+a.device-card {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+a.card h2, 
+a.card p {
+    text-decoration: none !important;
+}
+
 @media (max-width: 650px) {
     .bento-grid {
         grid-template-columns: 1fr; 
@@ -154,9 +157,11 @@ body {
     }
 
     .btn-back {
-        width: 42px;
-        height: 42px;
-        font-size: 18px;
+        top: 12px;
+        right: 12px;
+        width: 34px;
+        height: 34px;
+        font-size: 15px;
     }
 
     .info h1 {
@@ -184,19 +189,5 @@ body {
     .device-card p {
         font-size: 12px;
         line-height: 1.3;
-    }
-    .link-card {
-    text-decoration: none;
-    color: inherit;
-    }
-    a.card, 
-    a.device-card {
-    text-decoration: none !important;
-    color: inherit !important;
-    }
-
-    a.card h2, 
-    a.card p {
-    text-decoration: none !important;
     }
 }
