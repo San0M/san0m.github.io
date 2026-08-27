@@ -188,5 +188,15 @@ body {
     .link-card {
     text-decoration: none;
     color: inherit;
-}
+    }
+    a.card, 
+    a.device-card {
+    text-decoration: none !important;
+    color: inherit !important;
+    }
+
+    a.card h2, 
+    a.card p {
+    text-decoration: none !important;
+    }
 }
