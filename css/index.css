@@ -325,7 +325,7 @@ body {
     
     background-color: #16161a; 
     border: 1px solid #2d2d35;
-    color: #fef414; 
+    color: #959ea4; 
     font-size: 20px;
     cursor: pointer;
     
@@ -338,9 +338,9 @@ body {
 .btn-donate-floating:hover {
     background-color: #98A4A4; 
     color: #16161a;            
-    border-color: #fef414;
+    border-color: #62717a;
     transform: scale(1.1) translateY(-3px); 
-    box-shadow: 0 8px 25px rgba(254, 244, 20, 0.4);
+    box-shadow: 0 8px 25px rgba(146, 164, 176, 0.4);
 }
 
 .btn-donate-floating:active {
